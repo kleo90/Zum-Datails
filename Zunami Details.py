@@ -1,9 +1,9 @@
-import discord
+
 from discord.ext import commands
 import gspread
 import numpy as np
 
-gc = gspread.service_account(filename=r"C:\Users\Ксюша\Downloads\discort-zunami-c27a701ced9a.json")
+gc = gspread.service_account(discort-zunami-c27a701ced9a)
 sht1 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1lDJmHinja4nMis2RUsX2QBWAzVqaW8u0TdMWUZdhuqU/edit#gid=1902601867') #1
 worksheet = sht1.worksheet("Расчет_детальный")
 
