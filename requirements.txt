@@ -1,4 +1,0 @@
-asyncpraw==7.2.0
-discort==1.7.3
-gspread==5.1.1
-numpy==1.22.0
