@@ -1,1 +1,1 @@
-worker: python Zunamy Details.py
+worker: python Zunami Details.py
