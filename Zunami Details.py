@@ -3,16 +3,16 @@ import gspread
 import numpy as np
 
 gc = gspread.service_account(filename='discort-zunami-c27a701ced9a.json')
-sht1 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1lDJmHinja4nMis2RUsX2QBWAzVqaW8u0TdMWUZdhuqU/edit#gid=1902601867') #1
+sht1 = gc.open_by_url('https://docs.google.com/spreadsheets/d/') #1
 worksheet = sht1.worksheet("Расчет_детальный")
 worksheet3 = sht1.worksheet("Ответы на google-форму")
 values_list1= worksheet3.col_values(6) #id Ответы на google-форму
 
-sht2 = gc.open_by_url('https://docs.google.com/spreadsheets/d/19uW05thc6wBRnwbS10hj0cHT_jWP1kQE42ezkKeyG-g/edit#gid=1902601867') #2
+sht2 = gc.open_by_url('https://docs.google.com/spreadsheets/d/') #2
 worksheet2 = sht2.worksheet("Расчет_детальный")
 
 client = commands.Bot( command_prefix=" ! " )
-token = 'OTE4MTE0MjQ4NjE2NDYwMzE4.YbCihg.TJ7zl2BWNUX4WJ0tJYAIzT5nvvo'
+token = 'token'
 
 @client.event
 async def on_message(message):
