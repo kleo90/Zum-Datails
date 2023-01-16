@@ -2,7 +2,7 @@ from discord.ext import commands
 import gspread
 import numpy as np
 
-gc = gspread.service_account(filename='discort-zunami-c27a701ced9a.json')
+gc = gspread.service_account(filename='discort-zunami.json')
 sht1 = gc.open_by_url('https://docs.google.com/spreadsheets/d/') #1
 worksheet = sht1.worksheet("Расчет_детальный")
 worksheet3 = sht1.worksheet("Ответы на google-форму")
